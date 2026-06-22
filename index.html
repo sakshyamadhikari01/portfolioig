@@ -9,12 +9,54 @@
     <link rel="stylesheet" href="style.css">
 
   </head>
-    <body class="font-"Playfair+Display">
+    <body class="font-'Playfair+Display'">
 
       <div class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200">
 
-        <nav class="w-full fixed top-0 bg-red-500">
-          <div class="container mx-auto py-5">Hello</div>
+        <nav class="w-full fixed top-0 bg-white">
+          <div class="container mx-auto py-5 flex item-center justify-between">
+            <div class="flex items-center gap-2">
+            <img class="size-10 w-8" src="qr.png" alt="QR Code">
+            <span class="text-2xl font-bold text-indigo-900">Trex</span>
+           
+          </div>
+          <ul class="hidden md:flex space-x-10 text-grey-600 font-bold text-sm uppercase">
+            <li class="hover:text-gray-500">
+              <a href="#">homepage</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#">About me</a>
+            </li>
+            <li class="hover:text-gray-500" >
+              <a href="#">projects</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#">Contacts</a>
+            </li>
+           
+          </ul>
+          <img src="MOON.png" class="hidden md:block w-5 cursor-pointer" alt="moon">
+          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+          <div class="w-6 h-0.5 bg-black"></div>
+            
+          </div>
+          <ul id="menu" class=" bg-indigo-900 absolute left-0 top-0 w-full p10 rounded-b-3xl space-y-10 text-white text-center">
+              <li>
+              <a href="#">homepage</a>
+            </li>
+            <li>
+              <a href="#">About me</a>
+            </li>
+            <li >
+              <a href="#">projects</a>
+            </li>
+            <li>
+              <a href="#">Contacts</a>
+            </li>
+          </ul>
+          </div>
         </nav>
 
         <div></div>
@@ -22,7 +64,7 @@
       </div>
 
 
-
+<script src="app.js"></script>
 
       
 </body>
